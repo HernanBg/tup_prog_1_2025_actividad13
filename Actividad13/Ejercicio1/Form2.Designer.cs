@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            tbValor = new TextBox();
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
-            // textBox1
+            // tbValor
             // 
-            textBox1.Location = new Point(232, 93);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 23);
-            textBox1.TabIndex = 0;
+            tbValor.Location = new Point(232, 93);
+            tbValor.Name = "tbValor";
+            tbValor.Size = new Size(151, 23);
+            tbValor.TabIndex = 0;
             // 
             // button1
             // 
+            button1.DialogResult = DialogResult.OK;
             button1.Location = new Point(358, 167);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 1;
-            button1.Text = "button1";
+            button1.Text = "Aceptar";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
+            button2.DialogResult = DialogResult.Cancel;
             button2.Location = new Point(176, 167);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
@@ -72,11 +74,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(541, 265);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(tbValor);
             Name = "Form2";
             Text = "Form2";
             ResumeLayout(false);
@@ -84,10 +86,9 @@
         }
 
         #endregion
-
-        private TextBox textBox1;
         private Button button1;
         private Button button2;
         private Label label1;
+        public TextBox tbValor;
     }
 }
